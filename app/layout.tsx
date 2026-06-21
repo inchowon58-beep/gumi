@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   category: "반려동물",
   verification: {
     other: {
-      "naver-site-verification": "PENDING",
+      "naver-site-verification": "bed99ced81850ccf1dc1b508cdeb6393eb2f9975",
     },
   },
 };
