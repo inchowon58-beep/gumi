@@ -1,61 +1,41 @@
 import type { Metadata } from "next";
 import {
   getStructuredData,
-  siteDescription,
-  siteTitle,
   siteUrl,
-  targetKeywords,
 } from "@/lib/seo";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
-  title: {
-    default: siteTitle,
-    template: "%s | 구미강아지파양",
-  },
-  description: siteDescription,
-  keywords: [...targetKeywords, "일산 강아지 파양", "일산 유기견", "아가펫"],
-  authors: [{ name: "아가펫" }],
-  creator: "아가펫",
-  publisher: "아가펫",
+  metadataBase: new URL("https://gumi.cattery.co.kr"),
+  title: "구미강아지파양 | 구미강아지파양 전문 안내",
+  description: "구미강아지파양·구미강아지파양 전문 상담센터입니다. 보호소 연계, 입양·파양 안내. 전화 0505-707-0401",
+  keywords: ["gumi.cattery.co.kr"],
+  authors: [{ name: "gumi.cattery.co.kr" }],
+  creator: "gumi.cattery.co.kr",
+  publisher: "gumi.cattery.co.kr",
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
   },
   openGraph: {
     type: "website",
     locale: "ko_KR",
-    url: siteUrl,
-    siteName: "일산강아지파양 · 일산유기견보호소 안내",
-    title: siteTitle,
-    description: siteDescription,
-    images: [
-      {
-        url: "/images/shelter-01.jpg",
-        width: 1200,
-        height: 630,
-        alt: "일산강아지파양·일산유기견보호소 보호소 전경",
-      },
-    ],
+    url: "https://gumi.cattery.co.kr",
+    siteName: "gumi.cattery.co.kr",
+    title: "구미강아지파양 | 구미강아지파양 전문 안내",
+    description: "구미강아지파양·구미강아지파양 전문 상담센터입니다. 보호소 연계, 입양·파양 안내. 전화 0505-707-0401",
+    images: [{ url: "/images/landing-01.jpg" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: siteTitle,
-    description: siteDescription,
-    images: ["/images/shelter-01.jpg"],
+    title: "구미강아지파양 | 구미강아지파양 전문 안내",
+    description: "구미강아지파양·구미강아지파양 전문 상담센터입니다. 보호소 연계, 입양·파양 안내. 전화 0505-707-0401",
+    images: ["/images/landing-01.jpg"],
   },
   alternates: {
-    canonical: siteUrl,
+    canonical: "https://gumi.cattery.co.kr",
   },
-  category: "반려동물",
+  category: "gumi.cattery.co.kr",
   verification: {
     other: {
       "naver-site-verification": "bed99ced81850ccf1dc1b508cdeb6393eb2f9975",
@@ -73,6 +53,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <head>
+        <meta name="naver-site-verification" content="bed99ced81850ccf1dc1b508cdeb6393eb2f9975" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -96,7 +77,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="font-sans pb-safe-floating">{children}</body>
+      <body className="font-sans pb-safe-floating lg:pb-0">{children}</body>
     </html>
   );
 }
