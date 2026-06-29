@@ -1,0 +1,20 @@
+{
+  "site_url": "https://gumi.cattery.co.kr",
+  "pages": [
+    {
+      "url": "https://gumi.cattery.co.kr/gumigoyangibunyang",
+      "title": "구미고양이분양 | 건강한 반려묘, 캐터리에서 만나세요!",
+      "description": "구미고양이분양 전문 캐터리에서 품종묘와 건강한 만남을 약속드립니다. 투명한 정보와 꼼꼼한 케어로 새로운 가족을 찾아보세요.",
+      "keyword": "구미고양이분양",
+      "lastmod": "2026-06-29",
+      "images": [
+        "https://image.cattery.co.kr/maincoon/15.webp",
+        "https://image.cattery.co.kr/maincoon/52.webp",
+        "https://image.cattery.co.kr/maincoon/21.webp",
+        "https://image.cattery.co.kr/maincoon/20.webp",
+        "https://image.cattery.co.kr/maincoon/53.webp"
+      ]
+    }
+  ],
+  "site_name": "캐터리"
+}
